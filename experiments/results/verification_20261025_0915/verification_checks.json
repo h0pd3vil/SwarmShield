@@ -1,0 +1,23 @@
+{
+  "all_effective_configs_match_plan": true,
+  "all_original_message_totals_reconcile": true,
+  "all_task_lifecycle_totals_reconcile": true,
+  "baseline_event_counts_match_summary": true,
+  "baseline_event_rows": 12461,
+  "baseline_events_match_existing_file_byte_for_byte": true,
+  "baseline_snapshots": 100,
+  "dashboard_screenshot_count": 2,
+  "issues": [],
+  "manifest_failures": 0,
+  "one_parameter_overrides_for_all_sweeps": true,
+  "primary_seed_set": "42-71 in all four conditions",
+  "queue_rejected_message_callbacks_total": 1046,
+  "run_count": 610,
+  "run_groups": {
+    "communication": 280,
+    "primary": 120,
+    "processing_overload": 210
+  },
+  "runs_with_queue_rejected_callbacks": 16,
+  "sample_event_csv_count": 53
+}

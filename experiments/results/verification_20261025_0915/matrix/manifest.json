@@ -1,0 +1,17 @@
+{
+  "created_at_utc": "2026-10-25T03:47:41.208156+00:00",
+  "elapsed_seconds": 17.29622836999988,
+  "failed_run_count": 0,
+  "git_commit": null,
+  "output_files": [
+    "run_plan.json",
+    "runs.jsonl",
+    "runs.csv",
+    "sample_events/"
+  ],
+  "platform": "Linux-6.19.13+parrot7-amd64-x86_64-with-glibc2.41",
+  "primary_run_count": 120,
+  "python_version": "3.13.5",
+  "sweep_run_count": 490,
+  "total_run_count": 610
+}

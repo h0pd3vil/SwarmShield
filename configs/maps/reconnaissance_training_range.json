@@ -1,0 +1,963 @@
+{
+  "obstacles": [
+    {
+      "id": "hangar-west",
+      "kind": "building",
+      "vertices": [
+        [
+          22,
+          20
+        ],
+        [
+          34,
+          20
+        ],
+        [
+          34,
+          32
+        ],
+        [
+          22,
+          32
+        ]
+      ]
+    },
+    {
+      "id": "tower-north-east",
+      "kind": "tower",
+      "vertices": [
+        [
+          76,
+          19
+        ],
+        [
+          82,
+          19
+        ],
+        [
+          82,
+          27
+        ],
+        [
+          76,
+          27
+        ]
+      ]
+    },
+    {
+      "id": "wall-east",
+      "kind": "wall",
+      "vertices": [
+        [
+          67,
+          37
+        ],
+        [
+          70,
+          37
+        ],
+        [
+          70,
+          57
+        ],
+        [
+          67,
+          57
+        ]
+      ]
+    },
+    {
+      "id": "hangar-south-east",
+      "kind": "building",
+      "vertices": [
+        [
+          68,
+          70
+        ],
+        [
+          81,
+          70
+        ],
+        [
+          81,
+          82
+        ],
+        [
+          68,
+          82
+        ]
+      ]
+    },
+    {
+      "id": "rock-outcrop",
+      "kind": "rock",
+      "vertices": [
+        [
+          20,
+          63
+        ],
+        [
+          29,
+          61
+        ],
+        [
+          33,
+          67
+        ],
+        [
+          25,
+          72
+        ]
+      ]
+    }
+  ],
+  "roads": [
+    {
+      "id": "north-south-road",
+      "kind": "arterial",
+      "vertices": [
+        [
+          47,
+          0
+        ],
+        [
+          53,
+          0
+        ],
+        [
+          53,
+          100
+        ],
+        [
+          47,
+          100
+        ]
+      ]
+    },
+    {
+      "id": "east-west-road",
+      "kind": "arterial",
+      "vertices": [
+        [
+          0,
+          47
+        ],
+        [
+          100,
+          47
+        ],
+        [
+          100,
+          53
+        ],
+        [
+          0,
+          53
+        ]
+      ]
+    },
+    {
+      "id": "west-collector",
+      "kind": "collector",
+      "vertices": [
+        [
+          31,
+          0
+        ],
+        [
+          33.5,
+          0
+        ],
+        [
+          33.5,
+          47
+        ],
+        [
+          31,
+          47
+        ]
+      ]
+    },
+    {
+      "id": "east-collector",
+      "kind": "collector",
+      "vertices": [
+        [
+          78,
+          0
+        ],
+        [
+          80.5,
+          0
+        ],
+        [
+          80.5,
+          47
+        ],
+        [
+          78,
+          47
+        ]
+      ]
+    },
+    {
+      "id": "south-collector-west",
+      "kind": "collector",
+      "vertices": [
+        [
+          0,
+          65
+        ],
+        [
+          47,
+          65
+        ],
+        [
+          47,
+          67.5
+        ],
+        [
+          0,
+          67.5
+        ]
+      ]
+    },
+    {
+      "id": "south-collector-east",
+      "kind": "collector",
+      "vertices": [
+        [
+          53,
+          65
+        ],
+        [
+          100,
+          65
+        ],
+        [
+          100,
+          67.5
+        ],
+        [
+          53,
+          67.5
+        ]
+      ]
+    }
+  ],
+  "paths": [
+    {
+      "id": "park-path-west",
+      "kind": "footpath",
+      "vertices": [
+        [
+          27,
+          55
+        ],
+        [
+          28,
+          55
+        ],
+        [
+          31,
+          72
+        ],
+        [
+          30,
+          72
+        ]
+      ]
+    },
+    {
+      "id": "park-path-east",
+      "kind": "footpath",
+      "vertices": [
+        [
+          45,
+          55
+        ],
+        [
+          46,
+          55
+        ],
+        [
+          48,
+          70
+        ],
+        [
+          47,
+          70
+        ]
+      ]
+    }
+  ],
+  "parking_areas": [
+    {
+      "id": "parking-west",
+      "kind": "parking",
+      "vertices": [
+        [
+          13,
+          31
+        ],
+        [
+          20,
+          31
+        ],
+        [
+          20,
+          35
+        ],
+        [
+          13,
+          35
+        ]
+      ]
+    },
+    {
+      "id": "parking-east",
+      "kind": "parking",
+      "vertices": [
+        [
+          84,
+          55
+        ],
+        [
+          96,
+          55
+        ],
+        [
+          96,
+          59
+        ],
+        [
+          84,
+          59
+        ]
+      ]
+    }
+  ],
+  "water_bodies": [
+    {
+      "id": "woodland-pond",
+      "kind": "pond",
+      "vertices": [
+        [
+          34,
+          58
+        ],
+        [
+          39,
+          56
+        ],
+        [
+          44,
+          59
+        ],
+        [
+          44,
+          64
+        ],
+        [
+          40,
+          68
+        ],
+        [
+          34,
+          65
+        ],
+        [
+          32,
+          61
+        ]
+      ]
+    }
+  ],
+  "vegetation": [
+    {
+      "id": "woodland-west",
+      "kind": "vegetation",
+      "vertices": [
+        [
+          12,
+          76
+        ],
+        [
+          20,
+          75
+        ],
+        [
+          25,
+          88
+        ],
+        [
+          15,
+          91
+        ]
+      ],
+      "blocks_line_of_sight": true
+    },
+    {
+      "id": "woodland-north",
+      "kind": "vegetation",
+      "vertices": [
+        [
+          39,
+          15
+        ],
+        [
+          46,
+          16
+        ],
+        [
+          44,
+          25
+        ],
+        [
+          37,
+          23
+        ]
+      ],
+      "blocks_line_of_sight": true
+    },
+    {
+      "id": "park-central-west",
+      "kind": "vegetation",
+      "vertices": [
+        [
+          26,
+          55
+        ],
+        [
+          32,
+          53
+        ],
+        [
+          44,
+          55
+        ],
+        [
+          47,
+          62
+        ],
+        [
+          44,
+          71
+        ],
+        [
+          36,
+          73
+        ],
+        [
+          28,
+          69
+        ]
+      ],
+      "blocks_line_of_sight": true
+    },
+    {
+      "id": "tree-belt-north-east",
+      "kind": "vegetation",
+      "vertices": [
+        [
+          83,
+          20
+        ],
+        [
+          86,
+          18
+        ],
+        [
+          90,
+          22
+        ],
+        [
+          89,
+          27
+        ],
+        [
+          85,
+          28
+        ],
+        [
+          82,
+          25
+        ]
+      ],
+      "blocks_line_of_sight": true
+    },
+    {
+      "id": "park-south-east",
+      "kind": "vegetation",
+      "vertices": [
+        [
+          83,
+          69
+        ],
+        [
+          91,
+          67
+        ],
+        [
+          97,
+          71
+        ],
+        [
+          96,
+          76
+        ],
+        [
+          88,
+          77
+        ],
+        [
+          83,
+          74
+        ]
+      ],
+      "blocks_line_of_sight": true
+    }
+  ],
+  "safe_areas": [
+    {
+      "id": "launch-west",
+      "kind": "launch-recovery",
+      "vertices": [
+        [
+          5,
+          44
+        ],
+        [
+          14,
+          44
+        ],
+        [
+          14,
+          56
+        ],
+        [
+          5,
+          56
+        ]
+      ]
+    },
+    {
+      "id": "launch-north",
+      "kind": "launch-recovery",
+      "vertices": [
+        [
+          44,
+          5
+        ],
+        [
+          56,
+          5
+        ],
+        [
+          56,
+          14
+        ],
+        [
+          44,
+          14
+        ]
+      ]
+    },
+    {
+      "id": "launch-east",
+      "kind": "launch-recovery",
+      "vertices": [
+        [
+          86,
+          44
+        ],
+        [
+          95,
+          44
+        ],
+        [
+          95,
+          56
+        ],
+        [
+          86,
+          56
+        ]
+      ]
+    },
+    {
+      "id": "launch-south",
+      "kind": "launch-recovery",
+      "vertices": [
+        [
+          44,
+          86
+        ],
+        [
+          56,
+          86
+        ],
+        [
+          56,
+          95
+        ],
+        [
+          44,
+          95
+        ]
+      ]
+    }
+  ],
+  "restricted_regions": [
+    {
+      "id": "restricted-center",
+      "kind": "restricted",
+      "vertices": [
+        [
+          47,
+          47
+        ],
+        [
+          53,
+          47
+        ],
+        [
+          53,
+          53
+        ],
+        [
+          47,
+          53
+        ]
+      ],
+      "behavior": "deny_entry",
+      "authorized_agent_ids": []
+    }
+  ],
+  "mission_areas": [
+    {
+      "id": "survey-west",
+      "kind": "reconnaissance-area",
+      "vertices": [
+        [
+          8,
+          14
+        ],
+        [
+          20,
+          14
+        ],
+        [
+          20,
+          26
+        ],
+        [
+          8,
+          26
+        ]
+      ]
+    },
+    {
+      "id": "survey-east",
+      "kind": "reconnaissance-area",
+      "vertices": [
+        [
+          84,
+          77
+        ],
+        [
+          96,
+          77
+        ],
+        [
+          96,
+          89
+        ],
+        [
+          84,
+          89
+        ]
+      ]
+    },
+    {
+      "id": "survey-north-east",
+      "kind": "reconnaissance-area",
+      "vertices": [
+        [
+          64,
+          26
+        ],
+        [
+          72,
+          26
+        ],
+        [
+          72,
+          36
+        ],
+        [
+          64,
+          36
+        ]
+      ]
+    },
+    {
+      "id": "survey-south-west",
+      "kind": "reconnaissance-area",
+      "vertices": [
+        [
+          3,
+          76
+        ],
+        [
+          11,
+          76
+        ],
+        [
+          11,
+          91
+        ],
+        [
+          3,
+          91
+        ]
+      ]
+    }
+  ],
+  "points_of_interest": [
+    {
+      "id": "poi-west",
+      "kind": "synthetic-search-point",
+      "x": 16,
+      "y": 36
+    },
+    {
+      "id": "poi-north-east",
+      "kind": "synthetic-search-point",
+      "x": 86,
+      "y": 36
+    },
+    {
+      "id": "poi-south",
+      "kind": "synthetic-search-point",
+      "x": 40,
+      "y": 85
+    },
+    {
+      "id": "poi-center",
+      "kind": "reference",
+      "x": 50,
+      "y": 50
+    }
+  ],
+  "buildings": [
+    {
+      "id": "residential-west-01",
+      "kind": "residential_building",
+      "vertices": [
+        [
+          5,
+          29
+        ],
+        [
+          9,
+          29
+        ],
+        [
+          9,
+          33
+        ],
+        [
+          5,
+          33
+        ]
+      ],
+      "blocks_line_of_sight": true
+    },
+    {
+      "id": "residential-west-02",
+      "kind": "residential_building",
+      "vertices": [
+        [
+          27,
+          8
+        ],
+        [
+          32,
+          8
+        ],
+        [
+          32,
+          12
+        ],
+        [
+          27,
+          12
+        ]
+      ],
+      "blocks_line_of_sight": true
+    },
+    {
+      "id": "residential-north-central",
+      "kind": "residential_building",
+      "vertices": [
+        [
+          35,
+          31
+        ],
+        [
+          39,
+          31
+        ],
+        [
+          39,
+          35
+        ],
+        [
+          35,
+          35
+        ]
+      ],
+      "blocks_line_of_sight": true
+    },
+    {
+      "id": "residential-east-01",
+      "kind": "residential_building",
+      "vertices": [
+        [
+          88,
+          14
+        ],
+        [
+          93,
+          14
+        ],
+        [
+          93,
+          18
+        ],
+        [
+          88,
+          18
+        ]
+      ],
+      "blocks_line_of_sight": true
+    },
+    {
+      "id": "residential-east-02",
+      "kind": "residential_building",
+      "vertices": [
+        [
+          88,
+          29
+        ],
+        [
+          94,
+          29
+        ],
+        [
+          94,
+          33
+        ],
+        [
+          88,
+          33
+        ]
+      ],
+      "blocks_line_of_sight": true
+    },
+    {
+      "id": "residential-east-03",
+      "kind": "residential_building",
+      "vertices": [
+        [
+          86,
+          38
+        ],
+        [
+          92,
+          38
+        ],
+        [
+          92,
+          43
+        ],
+        [
+          86,
+          43
+        ]
+      ],
+      "blocks_line_of_sight": true
+    },
+    {
+      "id": "residential-south-west",
+      "kind": "residential_building",
+      "vertices": [
+        [
+          28,
+          78
+        ],
+        [
+          33,
+          78
+        ],
+        [
+          33,
+          82
+        ],
+        [
+          28,
+          82
+        ]
+      ],
+      "blocks_line_of_sight": true
+    },
+    {
+      "id": "residential-south-east",
+      "kind": "residential_building",
+      "vertices": [
+        [
+          86,
+          60
+        ],
+        [
+          92,
+          60
+        ],
+        [
+          92,
+          65
+        ],
+        [
+          86,
+          65
+        ]
+      ],
+      "blocks_line_of_sight": true
+    }
+  ],
+  "caution_zones": [
+    {
+      "id": "caution-north-east-approach",
+      "kind": "low-clearance-caution",
+      "vertices": [
+        [
+          73,
+          28
+        ],
+        [
+          77,
+          28
+        ],
+        [
+          77,
+          35
+        ],
+        [
+          73,
+          35
+        ]
+      ]
+    }
+  ]
+}

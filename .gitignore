@@ -1,0 +1,6 @@
+__pycache__/
+*.py[cod]
+output/
+/runs/
+game/.godot/
+experiments/results/*.csv

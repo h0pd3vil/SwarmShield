@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200">
+  <defs>
+    <linearGradient id="ground" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#65694f"/>
+      <stop offset=".52" stop-color="#716d53"/>
+      <stop offset="1" stop-color="#5d624c"/>
+    </linearGradient>
+    <linearGradient id="field-light" x1="0" y1="0" x2=".8" y2="1">
+      <stop stop-color="#8a805f" stop-opacity=".32"/>
+      <stop offset="1" stop-color="#827859" stop-opacity=".08"/>
+    </linearGradient>
+    <pattern id="ground-grain" width="42" height="38" patternUnits="userSpaceOnUse" patternTransform="rotate(-11)">
+      <path d="M3 8l7-3m13 23 9-4M18 4l3-1M4 32l4-2" stroke="#d0c18f" stroke-opacity=".22" stroke-width="1.5" stroke-linecap="round"/>
+      <path d="M14 16l4-2m18-8 5-2M25 36l5-2" stroke="#303a2d" stroke-opacity=".22" stroke-width="1.8" stroke-linecap="round"/>
+      <circle cx="29" cy="15" r="1.8" fill="#b3a578" fill-opacity=".22"/>
+      <circle cx="8" cy="22" r="1.4" fill="#333c2e" fill-opacity=".2"/>
+      <circle cx="37" cy="33" r="1.2" fill="#c5b487" fill-opacity=".2"/>
+    </pattern>
+    <pattern id="crop-rows" width="30" height="30" patternUnits="userSpaceOnUse" patternTransform="rotate(-8)">
+      <path d="M2 0v30M9 0v30M18 0v30M27 0v30" stroke="#c3b486" stroke-opacity=".25" stroke-width="2"/>
+      <path d="M5 0v30M14 0v30M23 0v30" stroke="#3b4432" stroke-opacity=".22" stroke-width="1.2"/>
+      <path d="M0 5h30M0 19h30" stroke="#c8bd98" stroke-opacity=".055" stroke-width="1"/>
+    </pattern>
+    <pattern id="rough-ground" width="72" height="68" patternUnits="userSpaceOnUse">
+      <path d="M8 12l14-6 12 4-5 8-18 2zm37 29 13-8 8 5-6 11-15 3zM2 55l10-5 8 4-5 8-13 1z" fill="#30392d" fill-opacity=".13"/>
+      <path d="M23 35l9-4 8 3-4 7-12 2zm31-30 9 2 4 6-10 3-6-5z" fill="#b6a77b" fill-opacity=".12"/>
+    </pattern>
+    <clipPath id="northwest-field"><path d="M0 0h390l-22 135-38 48-91 10-72-22L0 193z"/></clipPath>
+    <clipPath id="northeast-field"><path d="M492 0h708v184l-81 43-103-13-119 27-113-35-99 18-99-42z"/></clipPath>
+    <clipPath id="southwest-field"><path d="M0 706l105-18 112 25 74-22 99 17v492H0z"/></clipPath>
+    <clipPath id="southeast-field"><path d="M505 731l104-28 105 25 91-17 107 23 99-18 189 31v453H505z"/></clipPath>
+    <radialGradient id="vignette">
+      <stop offset=".42" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="1" stop-color="#182019" stop-opacity=".24"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="1200" fill="url(#ground)"/>
+  <rect width="1200" height="1200" fill="url(#rough-ground)" opacity=".75"/>
+
+  <!-- Irregular agricultural parcels and cleared ground; roads and structures are drawn from Python geometry. -->
+  <path d="M0 0h390l-22 135-38 48-91 10-72-22L0 193z" fill="#7b7758" fill-opacity=".43"/>
+  <g clip-path="url(#northwest-field)"><rect width="400" height="210" fill="url(#crop-rows)" opacity=".9"/></g>
+  <path d="M492 0h708v184l-81 43-103-13-119 27-113-35-99 18-99-42z" fill="url(#field-light)"/>
+  <g clip-path="url(#northeast-field)"><rect x="480" width="730" height="260" fill="url(#crop-rows)" opacity=".64"/></g>
+  <path d="M0 706l105-18 112 25 74-22 99 17v492H0z" fill="#555d47" fill-opacity=".35"/>
+  <g clip-path="url(#southwest-field)"><rect y="680" width="410" height="530" fill="url(#crop-rows)" opacity=".58"/></g>
+  <path d="M505 731l104-28 105 25 91-17 107 23 99-18 189 31v453H505z" fill="#777253" fill-opacity=".32"/>
+  <g clip-path="url(#southeast-field)"><rect x="500" y="690" width="710" height="520" fill="url(#crop-rows)" opacity=".66"/></g>
+
+  <!-- Subtle field boundaries and soil variation. -->
+  <path d="M0 193l95-9 72 22 72-9 91-14m182 1 99 42 113-18 119 35 103-27 87 11M0 706l105-18 112 25 74-22 99 17m115 23 104-28 105 25 91-17 107 23 99-18 189 31" fill="none" stroke="#c0b184" stroke-opacity=".18" stroke-width="3"/>
+  <path d="M0 0h1200v1200H0z" fill="url(#ground-grain)" opacity=".92"/>
+  <path d="M0 0h1200v1200H0z" fill="url(#vignette)"/>
+</svg>

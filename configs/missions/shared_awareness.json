@@ -1,0 +1,222 @@
+{
+  "_mission": {
+    "id": "shared_awareness",
+    "name": "Shared Awareness",
+    "description": "Observe how local views differ, then compare team coverage and track freshness.",
+    "prototype": false,
+    "objectives": [
+      {
+        "id": "team_coverage",
+        "label": "Team coverage reaches 50%",
+        "metric": "any_agent_awareness_coverage",
+        "operator": ">=",
+        "target": 0.5
+      },
+      {
+        "id": "agent_coverage",
+        "label": "Average local coverage reaches 40%",
+        "metric": "mean_agent_track_coverage",
+        "operator": ">=",
+        "target": 0.4
+      }
+    ],
+    "scoring_weights": {
+      "awareness": 0.3,
+      "timeliness": 0.3,
+      "reliability": 0.25,
+      "efficiency": 0.15
+    },
+    "tasks": [
+      {
+        "task_id": "survey-west",
+        "task_type": "reconnaissance",
+        "location": [
+          14,
+          20
+        ],
+        "region": [
+          [
+            8,
+            14
+          ],
+          [
+            20,
+            14
+          ],
+          [
+            20,
+            26
+          ],
+          [
+            8,
+            26
+          ]
+        ],
+        "prerequisites": [],
+        "priority": 4,
+        "deadline_step": 75,
+        "estimated_duration_steps": 4,
+        "required_capabilities": [
+          "visual_sensor"
+        ],
+        "completion_criteria": {
+          "kind": "cover_region",
+          "coverage_fraction": 0.6
+        }
+      },
+      {
+        "task_id": "survey-east",
+        "task_type": "reconnaissance",
+        "location": [
+          90,
+          83
+        ],
+        "region": [
+          [
+            84,
+            77
+          ],
+          [
+            96,
+            77
+          ],
+          [
+            96,
+            89
+          ],
+          [
+            84,
+            89
+          ]
+        ],
+        "prerequisites": [],
+        "priority": 3,
+        "deadline_step": 82,
+        "estimated_duration_steps": 4,
+        "required_capabilities": [
+          "visual_sensor"
+        ],
+        "completion_criteria": {
+          "kind": "cover_region",
+          "coverage_fraction": 0.6
+        }
+      },
+      {
+        "task_id": "survey-north-east",
+        "task_type": "reconnaissance",
+        "location": [
+          68,
+          31
+        ],
+        "region": [
+          [
+            64,
+            26
+          ],
+          [
+            72,
+            26
+          ],
+          [
+            72,
+            36
+          ],
+          [
+            64,
+            36
+          ]
+        ],
+        "prerequisites": [],
+        "priority": 2,
+        "deadline_step": 86,
+        "estimated_duration_steps": 4,
+        "required_capabilities": [
+          "visual_sensor"
+        ],
+        "completion_criteria": {
+          "kind": "cover_region",
+          "coverage_fraction": 0.6
+        }
+      },
+      {
+        "task_id": "survey-south-west",
+        "task_type": "reconnaissance",
+        "location": [
+          7,
+          84
+        ],
+        "region": [
+          [
+            3,
+            76
+          ],
+          [
+            11,
+            76
+          ],
+          [
+            11,
+            91
+          ],
+          [
+            3,
+            91
+          ]
+        ],
+        "prerequisites": [],
+        "priority": 1,
+        "deadline_step": 90,
+        "estimated_duration_steps": 4,
+        "required_capabilities": [
+          "visual_sensor"
+        ],
+        "completion_criteria": {
+          "kind": "cover_region",
+          "coverage_fraction": 0.6
+        }
+      }
+    ]
+  },
+  "seed": 42,
+  "map_preset": "reconnaissance_training_range",
+  "world": {
+    "width": 100,
+    "height": 100,
+    "steps": 100
+  },
+  "scenario": {
+    "observer_count": 4,
+    "entity_count": 12,
+    "protected_zone_radius": 10
+  },
+  "observation": {
+    "range": 25,
+    "detection_probability": 0.8,
+    "position_noise_std": 1.0,
+    "field_of_view_degrees": 360,
+    "require_line_of_sight": true,
+    "max_track_age_steps": 10
+  },
+  "network": {
+    "delivery_probability": 0.9,
+    "max_latency_steps": 4,
+    "duplicate_probability": 0.02,
+    "partition_enabled": false
+  },
+  "scheduler": {
+    "policy": "fixed-priority",
+    "processing_capacity_per_step": 48,
+    "queue_capacity": 500,
+    "min_deadline_steps": 4,
+    "max_deadline_steps": 12,
+    "max_processing_cost": 3,
+    "max_priority": 3
+  },
+  "coordination": {
+    "mode": "centralized",
+    "task_capacity_per_resource": 2,
+    "task_duration_steps": 3,
+    "task_deadline_steps": 12,
+    "queue_capacity": 100
+  }
+}

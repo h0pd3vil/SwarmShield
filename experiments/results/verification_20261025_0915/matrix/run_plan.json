@@ -1,0 +1,353 @@
+{
+  "base_configuration": {
+    "coordination_mode": "centralized",
+    "coordination_queue_capacity": 100,
+    "coordination_task_deadline_steps": 12,
+    "coordination_task_duration_steps": 3,
+    "delivery_probability": 0.9,
+    "detection_probability": 0.8,
+    "detection_range": 25.0,
+    "duplicate_probability": 0.02,
+    "entity_count": 12,
+    "max_latency_steps": 4,
+    "max_task_deadline_steps": 12,
+    "max_task_priority": 3,
+    "max_task_processing_cost": 3,
+    "max_track_age_steps": 10,
+    "min_task_deadline_steps": 4,
+    "observer_count": 4,
+    "partition_enabled": false,
+    "position_noise_std": 1.0,
+    "processing_capacity_per_step": 48,
+    "protected_zone_radius": 10.0,
+    "queue_capacity": 500,
+    "scheduler_policy": "fixed-priority",
+    "seed": 42,
+    "steps": 100,
+    "task_capacity_per_resource": 2,
+    "world_height": 100.0,
+    "world_width": 100.0
+  },
+  "communication_factors": [
+    {
+      "factor": "delivery_probability",
+      "level": 0.5,
+      "overrides": {
+        "delivery_probability": 0.5
+      }
+    },
+    {
+      "factor": "delivery_probability",
+      "level": 0.7,
+      "overrides": {
+        "delivery_probability": 0.7
+      }
+    },
+    {
+      "factor": "delivery_probability",
+      "level": 0.9,
+      "overrides": {
+        "delivery_probability": 0.9
+      }
+    },
+    {
+      "factor": "delivery_probability",
+      "level": 1.0,
+      "overrides": {
+        "delivery_probability": 1.0
+      }
+    },
+    {
+      "factor": "max_latency_steps",
+      "level": 0,
+      "overrides": {
+        "max_latency_steps": 0
+      }
+    },
+    {
+      "factor": "max_latency_steps",
+      "level": 4,
+      "overrides": {
+        "max_latency_steps": 4
+      }
+    },
+    {
+      "factor": "max_latency_steps",
+      "level": 8,
+      "overrides": {
+        "max_latency_steps": 8
+      }
+    },
+    {
+      "factor": "max_latency_steps",
+      "level": 12,
+      "overrides": {
+        "max_latency_steps": 12
+      }
+    },
+    {
+      "factor": "duplicate_probability",
+      "level": 0.0,
+      "overrides": {
+        "duplicate_probability": 0.0
+      }
+    },
+    {
+      "factor": "duplicate_probability",
+      "level": 0.02,
+      "overrides": {
+        "duplicate_probability": 0.02
+      }
+    },
+    {
+      "factor": "duplicate_probability",
+      "level": 0.1,
+      "overrides": {
+        "duplicate_probability": 0.1
+      }
+    },
+    {
+      "factor": "duplicate_probability",
+      "level": 0.25,
+      "overrides": {
+        "duplicate_probability": 0.25
+      }
+    },
+    {
+      "factor": "partition_enabled",
+      "level": false,
+      "overrides": {
+        "partition_enabled": false
+      }
+    },
+    {
+      "factor": "partition_enabled",
+      "level": true,
+      "overrides": {
+        "partition_enabled": true
+      }
+    }
+  ],
+  "communication_modes": [
+    "independent",
+    "cooperative"
+  ],
+  "config_path": "configs/baseline.json",
+  "overload_factors": [
+    {
+      "factor": "processing_capacity_per_step",
+      "level": 16,
+      "overrides": {
+        "processing_capacity_per_step": 16
+      }
+    },
+    {
+      "factor": "processing_capacity_per_step",
+      "level": 24,
+      "overrides": {
+        "processing_capacity_per_step": 24
+      }
+    },
+    {
+      "factor": "processing_capacity_per_step",
+      "level": 32,
+      "overrides": {
+        "processing_capacity_per_step": 32
+      }
+    },
+    {
+      "factor": "processing_capacity_per_step",
+      "level": 48,
+      "overrides": {
+        "processing_capacity_per_step": 48
+      }
+    },
+    {
+      "factor": "processing_capacity_per_step",
+      "level": 64,
+      "overrides": {
+        "processing_capacity_per_step": 64
+      }
+    },
+    {
+      "factor": "processing_capacity_per_step",
+      "level": 96,
+      "overrides": {
+        "processing_capacity_per_step": 96
+      }
+    },
+    {
+      "factor": "queue_capacity",
+      "level": 32,
+      "overrides": {
+        "queue_capacity": 32
+      }
+    },
+    {
+      "factor": "queue_capacity",
+      "level": 64,
+      "overrides": {
+        "queue_capacity": 64
+      }
+    },
+    {
+      "factor": "queue_capacity",
+      "level": 128,
+      "overrides": {
+        "queue_capacity": 128
+      }
+    },
+    {
+      "factor": "queue_capacity",
+      "level": 500,
+      "overrides": {
+        "queue_capacity": 500
+      }
+    },
+    {
+      "factor": "entity_count",
+      "level": 6,
+      "overrides": {
+        "entity_count": 6
+      }
+    },
+    {
+      "factor": "entity_count",
+      "level": 12,
+      "overrides": {
+        "entity_count": 12
+      }
+    },
+    {
+      "factor": "entity_count",
+      "level": 24,
+      "overrides": {
+        "entity_count": 24
+      }
+    },
+    {
+      "factor": "entity_count",
+      "level": 36,
+      "overrides": {
+        "entity_count": 36
+      }
+    },
+    {
+      "factor": "max_task_processing_cost",
+      "level": 1,
+      "overrides": {
+        "max_task_processing_cost": 1
+      }
+    },
+    {
+      "factor": "max_task_processing_cost",
+      "level": 3,
+      "overrides": {
+        "max_task_processing_cost": 3
+      }
+    },
+    {
+      "factor": "max_task_processing_cost",
+      "level": 6,
+      "overrides": {
+        "max_task_processing_cost": 6
+      }
+    },
+    {
+      "factor": "max_task_deadline_steps",
+      "level": 4,
+      "overrides": {
+        "max_task_deadline_steps": 4
+      }
+    },
+    {
+      "factor": "max_task_deadline_steps",
+      "level": 8,
+      "overrides": {
+        "max_task_deadline_steps": 8
+      }
+    },
+    {
+      "factor": "max_task_deadline_steps",
+      "level": 12,
+      "overrides": {
+        "max_task_deadline_steps": 12
+      }
+    },
+    {
+      "factor": "max_task_deadline_steps",
+      "level": 24,
+      "overrides": {
+        "max_task_deadline_steps": 24
+      }
+    }
+  ],
+  "primary_conditions": [
+    {
+      "mode": "independent",
+      "policy": "fixed-priority"
+    },
+    {
+      "mode": "independent",
+      "policy": "edf"
+    },
+    {
+      "mode": "cooperative",
+      "policy": "fixed-priority"
+    },
+    {
+      "mode": "cooperative",
+      "policy": "edf"
+    }
+  ],
+  "primary_seeds": [
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71
+  ],
+  "sample_event_seed": 42,
+  "start_seed": 42,
+  "sweep_mode_policy": {
+    "mode": "cooperative",
+    "policy": "fixed-priority"
+  },
+  "sweep_seeds": [
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "seed": 42,
+  "world": {
+    "width": 100,
+    "height": 100,
+    "steps": 100
+  },
+  "scenario": {
+    "observer_count": 4,
+    "entity_count": 12,
+    "protected_zone_radius": 10
+  },
+  "observation": {
+    "range": 25,
+    "detection_probability": 0.8,
+    "position_noise_std": 1.0,
+    "max_track_age_steps": 10
+  },
+  "network": {
+    "delivery_probability": 0.9,
+    "max_latency_steps": 4,
+    "duplicate_probability": 0.02,
+    "partition_enabled": false
+  },
+  "scheduler": {
+    "policy": "fixed-priority",
+    "processing_capacity_per_step": 48,
+    "queue_capacity": 500,
+    "min_deadline_steps": 4,
+    "max_deadline_steps": 12,
+    "max_processing_cost": 3,
+    "max_priority": 3
+  },
+  "coordination": {
+    "mode": "centralized",
+    "task_capacity_per_resource": 2,
+    "task_duration_steps": 3,
+    "task_deadline_steps": 12,
+    "queue_capacity": 100
+  }
+}
